@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.19">
+    <testcase classname="Batch Requests" name="Cretae new Program for Batch" time="2.052">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When post request for program to "/saveprogram".............................passed
+Then Validate response code 201.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
