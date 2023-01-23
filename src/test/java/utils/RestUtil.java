@@ -6,7 +6,11 @@ import java.time.ZonedDateTime;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
-public class RestUtil {
+import base.TestBase;
+
+public class RestUtil extends TestBase {
+	
+	public static final String EXCEL ="./src/test/java/com/api/testdata/DataExcel.xlsx";
 
 	public static String batchName() {
 		return String.format("%s%s-%s-%s-%s", 
@@ -38,6 +42,18 @@ public class RestUtil {
 	public static String programDescription() {
 		String generateString = RandomStringUtils.randomAlphabetic(5);
 		return (generateString);		
+	}
+
+	
+
+	public static String programNameForExcel() {
+		String generateString = RandomStringUtils.randomNumeric(10);
+		return ("Jan23-NinjaSpark-" + generateString);
+	}
+
+	public static String programDescriptionForExcel() {
+		String generateString = RandomStringUtils.randomAlphabetic(10);
+		return ("NinjaSpark-" + generateString);
 	}
 
 

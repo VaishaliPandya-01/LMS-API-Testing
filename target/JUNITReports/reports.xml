@@ -1,9 +1,132 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.19">
-    <testcase classname="Batch Requests" name="Cretae new Program for Batch" time="2.052">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="21" time="11.601">
+    <testcase classname="Batch Requests" name="Verify can send get request to retrieve all Batch data" time="3.316">
         <system-out><![CDATA[Given A Service with LMS API................................................passed
-When post request for program to "/saveprogram".............................passed
+When Get request to view all batches "/batches".............................passed
+Then Validate response code 200.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Cretae new Program for Batch" time="1.144">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When post request to create program "/saveprogram"..........................passed
 Then Validate response code 201.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Cretae Batch" time="0.289">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When post request to create batch "/batches"................................passed
+Then Validate response code 201.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Cretae duplicate Batch" time="0.193">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When post request to create duplicate batch "/batches"......................passed
+Then Validate response code 400.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Get Batches By Id" time="0.205">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When Get request by batch ID to "/batches/batchId/".........................passed
+Then Validate response code 200.............................................passed
+And Validate batch Id is displayed as 0.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Get Batches By Batch Name" time="0.211">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When Get request by batch name to "/batches/batchName/".....................passed
+Then Validate response code 200.............................................passed
+And Validate batch Name is displayed as "value".............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Get Batches By Program Id" time="0.201">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When Get request by program ID to "/batches/program/".......................passed
+Then Validate response code 200.............................................passed
+And Validate Program Id is displayed as 0...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Update Batch By Id" time="0.215">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When put request to update batch data "/batches/"...........................passed
+Then Validate response code 200.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Delete Batch By Id" time="0.19">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When Delete batch request to "/batches/"....................................passed
+Then Validate response code 200.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Delete Batch By already deleted  Id" time="0.196">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When Delete already deleted batch request to "/batches/"....................passed
+Then Validate response code 400.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Batch Requests" name="Delete Program by name" time="0.191">
+        <system-out><![CDATA[Given A Service with LMS API................................................passed
+When Delete program request to "/deletebyprogname/".........................passed
+Then Validate response code 200.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Verify can send get request to retrieve all program data" time="1.854">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends GET request "/allPrograms"..................................passed
+Then User should get status code "200", valid response body and json schema validated for successful GET request.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Verify can send get request to retrieve all program data 2" time="0.358">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends GET request "/allProgram"...................................passed
+Then User should get status code "404", valid response body and json schema validated for successful GET request.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Verify that user can send post request" time="0.711">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends POST request to create program "create" and 0...............passed
+Then User should get status code "201"......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Verify that user can send post request 2" time="0.263">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends POST request to create program "create" and 1...............passed
+Then User should get status code "201"......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Verify that user can send post request 3" time="0.257">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends POST request with data using "postdata" and 0...............passed
+Then User should get status code "400" for duplicate entry..................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Verify  can send get request to retrieve single Program dara" time="0.209">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends GET request for single Programid data.......................passed
+Then User should get status code "200" for getProgramId and Name............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Update By Program Id" time="0.253">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends put request to "/putprogram/" and "putdataId" and 0.........passed
+Then User should get status code update validation "200"....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Update By Program Name" time="0.294">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends put request to "/program/" byName "putdataName" and 0.......passed
+Then User should get status code update validation "200"....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Delete Program By Id" time="0.191">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends Delete program by id "/deletebyprogid/".....................passed
+Then User should validate status code "200".................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Program Feature" name="Delete Program By Name" time="0.187">
+        <system-out><![CDATA[Given User sets request with authorization..................................passed
+When User sends Delete program by Name "/deletebyprogname/".................passed
+Then User should validate status code "200".................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

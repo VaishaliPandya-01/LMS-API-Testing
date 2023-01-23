@@ -1,0 +1,142 @@
+[INFO ]2023-01-23 10:35:48.967 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:52.372 [main]TestBase-User sends Get request/batches
+[INFO ]2023-01-23 10:35:52.808 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:35:52.977 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:53.990 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:35:53.993 [main]TestBase-User get response201
+[INFO ]2023-01-23 10:35:54.011 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:54.334 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:35:54.337 [main]TestBase-User get response201
+[INFO ]2023-01-23 10:35:54.352 [main]TestBase-user sends request with BaseURL
+[WARN ]2023-01-23 10:35:54.612 [main]TestBase-Duplicate Entry: 400
+[INFO ]2023-01-23 10:35:54.612 [main]TestBase-Duplicate entry error message  
+[INFO ]2023-01-23 10:35:54.615 [main]TestBase-User get response400
+[INFO ]2023-01-23 10:35:54.624 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:54.827 [main]TestBase-User sends Get request/batches/batchId/
+[INFO ]2023-01-23 10:35:54.834 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:35:54.951 [main]TestBase-User get batchID 7697
+[INFO ]2023-01-23 10:35:54.963 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:55.198 [main]TestBase-User sends Get request/batches/batchName/
+[INFO ]2023-01-23 10:35:55.200 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:35:55.213 [main]TestBase-User get batch name 23Jan-NinjaSpark-SDET-177
+[INFO ]2023-01-23 10:35:55.221 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:55.419 [main]TestBase-User sends Get request/batches/program/
+[INFO ]2023-01-23 10:35:55.421 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:35:55.431 [main]TestBase-User get program ID 14712
+[INFO ]2023-01-23 10:35:55.507 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:55.708 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:35:55.709 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:35:55.718 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:55.890 [main]TestBase-DELETE Request successful: 200
+[INFO ]2023-01-23 10:35:55.891 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:35:55.898 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:56.091 [main]TestBase-entity not present 
+[INFO ]2023-01-23 10:35:56.093 [main]TestBase-User get response400
+[INFO ]2023-01-23 10:35:56.100 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:56.365 [main]TestBase-DELETE Request successful: 200
+[INFO ]2023-01-23 10:35:56.367 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:35:56.389 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:57.115 [main]TestBase-User sends request with endpoint/allPrograms
+[INFO ]2023-01-23 10:35:57.945 [main]TestBase-Get validation code of GetAllProgram: 200
+[INFO ]2023-01-23 10:35:57.958 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:58.342 [main]TestBase-User sends request with endpoint/allProgram
+[INFO ]2023-01-23 10:35:58.343 [main]TestBase-Resend the Same Request again
+[ERROR]2023-01-23 10:35:58.343 [main]TestBase-Not Found: 404
+[INFO ]2023-01-23 10:35:58.357 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:58.359 [main]TestBase-POST request with endpointhttps://lms-backend-service.herokuapp.com/lms/saveprogram
+[INFO ]2023-01-23 10:35:59.230 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:35:59.231 [main]TestBase-Created: 201
+[INFO ]2023-01-23 10:35:59.298 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:59.302 [main]TestBase-POST request with endpointhttps://lms-backend-service.herokuapp.com/lms/saveprogram
+[INFO ]2023-01-23 10:35:59.566 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:35:59.567 [main]TestBase-Created: 201
+[INFO ]2023-01-23 10:35:59.577 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:35:59.579 [main]TestBase-Resend POST request: https://lms-backend-service.herokuapp.com/lms/saveprogram
+[INFO ]2023-01-23 10:35:59.630 [main]TestBase-POST same data Using Excel  
+[WARN ]2023-01-23 10:35:59.824 [main]TestBase-Duplicate Entry: 400
+[INFO ]2023-01-23 10:35:59.832 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:36:00.023 [main]TestBase-GET request with endpoint: https://lms-backend-service.herokuapp.com/lms/programs/14713
+[INFO ]2023-01-23 10:36:00.024 [main]TestBase-Get programbyId StatusCode: 200
+[INFO ]2023-01-23 10:36:00.035 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:36:00.041 [main]TestBase-PUT request with endpoint: https://lms-backend-service.herokuapp.com/lms/putprogram/14713
+[INFO ]2023-01-23 10:36:00.278 [main]TestBase-Updated sucessfully: 200
+[INFO ]2023-01-23 10:36:00.290 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:36:00.291 [main]TestBase-PUT request with endpoint: https://lms-backend-service.herokuapp.com/lms/program/NinjaSparkTeam9_SDET_2002
+[INFO ]2023-01-23 10:36:00.547 [main]TestBase-Updated sucessfully: 200
+[INFO ]2023-01-23 10:36:00.554 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:36:00.555 [main]TestBase-DELETE request with endpoint:https://lms-backend-service.herokuapp.com/lms/deletebyprogid/14713
+[INFO ]2023-01-23 10:36:00.748 [main]TestBase-DELETE Request successful: 200
+[INFO ]2023-01-23 10:36:00.759 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:36:00.761 [main]TestBase-DELETE request with endpoint:https://lms-backend-service.herokuapp.com/lms/deletebyprogname/Jan23-NinjaSpark-6267738160
+[INFO ]2023-01-23 10:36:00.960 [main]TestBase-DELETE Request successful: 200
+[INFO ]2023-01-23 10:37:35.970 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:37.793 [main]TestBase-User sends Get request/batches
+[INFO ]2023-01-23 10:37:38.151 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:37:38.345 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:39.475 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:37:39.479 [main]TestBase-User get response201
+[INFO ]2023-01-23 10:37:39.494 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:39.775 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:37:39.777 [main]TestBase-User get response201
+[INFO ]2023-01-23 10:37:39.787 [main]TestBase-user sends request with BaseURL
+[WARN ]2023-01-23 10:37:39.974 [main]TestBase-Duplicate Entry: 400
+[INFO ]2023-01-23 10:37:39.974 [main]TestBase-Duplicate entry error message  
+[INFO ]2023-01-23 10:37:39.977 [main]TestBase-User get response400
+[INFO ]2023-01-23 10:37:40.052 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:40.214 [main]TestBase-User sends Get request/batches/batchId/
+[INFO ]2023-01-23 10:37:40.216 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:37:40.251 [main]TestBase-User get batchID 7698
+[INFO ]2023-01-23 10:37:40.266 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:40.455 [main]TestBase-User sends Get request/batches/batchName/
+[INFO ]2023-01-23 10:37:40.457 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:37:40.473 [main]TestBase-User get batch name 23Jan-NinjaSpark-SDET-337
+[INFO ]2023-01-23 10:37:40.481 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:40.660 [main]TestBase-User sends Get request/batches/program/
+[INFO ]2023-01-23 10:37:40.665 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:37:40.678 [main]TestBase-User get program ID 14715
+[INFO ]2023-01-23 10:37:40.749 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:40.959 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:37:40.961 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:37:40.969 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:41.153 [main]TestBase-DELETE Request successful: 200
+[INFO ]2023-01-23 10:37:41.155 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:37:41.162 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:41.355 [main]TestBase-entity not present 
+[INFO ]2023-01-23 10:37:41.357 [main]TestBase-User get response400
+[INFO ]2023-01-23 10:37:41.363 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:41.546 [main]TestBase-DELETE Request successful: 200
+[INFO ]2023-01-23 10:37:41.550 [main]TestBase-User get response200
+[INFO ]2023-01-23 10:37:41.576 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:42.507 [main]TestBase-User sends request with endpoint/allPrograms
+[INFO ]2023-01-23 10:37:43.413 [main]TestBase-Get validation code of GetAllProgram: 200
+[INFO ]2023-01-23 10:37:43.423 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:43.776 [main]TestBase-User sends request with endpoint/allProgram
+[INFO ]2023-01-23 10:37:43.778 [main]TestBase-Resend the Same Request again
+[ERROR]2023-01-23 10:37:43.778 [main]TestBase-Not Found: 404
+[INFO ]2023-01-23 10:37:43.791 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:43.792 [main]TestBase-POST request with endpointhttps://lms-backend-service.herokuapp.com/lms/saveprogram
+[INFO ]2023-01-23 10:37:44.493 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:37:44.495 [main]TestBase-Created: 201
+[INFO ]2023-01-23 10:37:44.506 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:44.507 [main]TestBase-POST request with endpointhttps://lms-backend-service.herokuapp.com/lms/saveprogram
+[INFO ]2023-01-23 10:37:44.762 [main]TestBase-All required details send  
+[INFO ]2023-01-23 10:37:44.763 [main]TestBase-Created: 201
+[INFO ]2023-01-23 10:37:44.775 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:44.776 [main]TestBase-Resend POST request: https://lms-backend-service.herokuapp.com/lms/saveprogram
+[INFO ]2023-01-23 10:37:44.809 [main]TestBase-POST same data Using Excel  
+[WARN ]2023-01-23 10:37:45.027 [main]TestBase-Duplicate Entry: 400
+[INFO ]2023-01-23 10:37:45.039 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:45.242 [main]TestBase-GET request with endpoint: https://lms-backend-service.herokuapp.com/lms/programs/14716
+[INFO ]2023-01-23 10:37:45.246 [main]TestBase-Get programbyId StatusCode: 200
+[INFO ]2023-01-23 10:37:45.261 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:45.266 [main]TestBase-PUT request with endpoint: https://lms-backend-service.herokuapp.com/lms/putprogram/14716
+[INFO ]2023-01-23 10:37:45.505 [main]TestBase-Updated sucessfully: 200
+[INFO ]2023-01-23 10:37:45.521 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:45.523 [main]TestBase-PUT request with endpoint: https://lms-backend-service.herokuapp.com/lms/program/NinjaSparkTeam9_SDET_2002
+[INFO ]2023-01-23 10:37:45.808 [main]TestBase-Updated sucessfully: 200
+[INFO ]2023-01-23 10:37:45.818 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:45.820 [main]TestBase-DELETE request with endpoint:https://lms-backend-service.herokuapp.com/lms/deletebyprogid/14716
+[INFO ]2023-01-23 10:37:46.006 [main]TestBase-DELETE Request successful: 200
+[INFO ]2023-01-23 10:37:46.021 [main]TestBase-user sends request with BaseURL
+[INFO ]2023-01-23 10:37:46.023 [main]TestBase-DELETE request with endpoint:https://lms-backend-service.herokuapp.com/lms/deletebyprogname/Jan23-NinjaSpark-9868938941
+[INFO ]2023-01-23 10:37:46.203 [main]TestBase-DELETE Request successful: 200

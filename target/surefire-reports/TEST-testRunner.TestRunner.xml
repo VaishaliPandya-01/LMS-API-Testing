@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="1" name="testRunner.TestRunner" time="5.835" errors="0" skipped="0">
+<testsuite tests="21" failures="0" name="testRunner.TestRunner" time="11.576" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.5+9-LTS-191"/>
@@ -61,85 +61,25 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Batch Requests" name="Get All batches" time="3.173"/>
-  <testcase classname="Batch Requests" name="Cretae new Program for Batch" time="1.2"/>
-  <testcase classname="Batch Requests" name="Cretae Batch" time="0.274"/>
-  <testcase classname="Batch Requests" name="Get Batches By Id" time="0.25"/>
-  <testcase classname="Batch Requests" name="Get Batches By Batch Name" time="0.243"/>
-  <testcase classname="Batch Requests" name="Get Batches By Program Id" time="0.247"/>
-  <testcase classname="Batch Requests" name="Update Batch By Id" time="0.223">
-    <failure message="1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;405&gt;.
-" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;405&gt;.
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BatchSD.Validate_response_code(BatchSD.java:90)
-	at ✽.Validate response code 200(file:///C:/Users/joshi/eclipse-workspace/LMS_API/src/test/resources/features/batch.feature:39)
-</failure>
-    <system-out>
-Scenario: Update Batch By Id              # src/test/resources/features/batch.feature:36
-  Given A Service with LMS API            # stepDefinitions.BatchSD.a_Service_with_lms_API()
-  When put request to &quot;/batches/batchId/&quot; # stepDefinitions.BatchSD.put_request_to_batches_batchId(java.lang.String)
-  Then Validate response code 200         # stepDefinitions.BatchSD.Validate_response_code(java.lang.Integer)
-      java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;405&gt;.
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepDefinitions.BatchSD.Validate_response_code(BatchSD.java:90)
-	at ?.Validate response code 200(file:///C:/Users/joshi/eclipse-workspace/LMS_API/src/test/resources/features/batch.feature:39)
-
-</system-out>
-  </testcase>
-  <testcase classname="Batch Requests" name="Delete Batch By Id" time="0.225"/>
+  <testcase classname="Batch Requests" name="Verify can send get request to retrieve all Batch data" time="4.068"/>
+  <testcase classname="Batch Requests" name="Cretae new Program for Batch" time="0.801"/>
+  <testcase classname="Batch Requests" name="Cretae Batch" time="0.294"/>
+  <testcase classname="Batch Requests" name="Cretae duplicate Batch" time="0.263"/>
+  <testcase classname="Batch Requests" name="Get Batches By Id" time="0.213"/>
+  <testcase classname="Batch Requests" name="Get Batches By Batch Name" time="0.216"/>
+  <testcase classname="Batch Requests" name="Get Batches By Program Id" time="0.269"/>
+  <testcase classname="Batch Requests" name="Update Batch By Id" time="0.22"/>
+  <testcase classname="Batch Requests" name="Delete Batch By Id" time="0.194"/>
+  <testcase classname="Batch Requests" name="Delete Batch By already deleted  Id" time="0.201"/>
+  <testcase classname="Batch Requests" name="Delete Program by name" time="0.221"/>
+  <testcase classname="Program Feature" name="Verify can send get request to retrieve all program data" time="2.211"/>
+  <testcase classname="Program Feature" name="Verify can send get request to retrieve all program data" time="0.001"/>
+  <testcase classname="Program Feature" name="Verify that user can send post request" time="0.717"/>
+  <testcase classname="Program Feature" name="Verify that user can send post request" time="0.259"/>
+  <testcase classname="Program Feature" name="Verify that user can send post request" time="0.263"/>
+  <testcase classname="Program Feature" name="Verify  can send get request to retrieve single Program dara" time="0.216"/>
+  <testcase classname="Program Feature" name="Update By Program Id" time="0.287"/>
+  <testcase classname="Program Feature" name="Update By Program Name" time="0.281"/>
+  <testcase classname="Program Feature" name="Delete Program By Id" time="0.223"/>
+  <testcase classname="Program Feature" name="Delete Program By Name" time="0.158"/>
 </testsuite>

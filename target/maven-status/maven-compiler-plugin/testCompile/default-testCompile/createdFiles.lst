@@ -1,4 +1,6 @@
 utils\RestUtil.class
+base\TestBase.class
 stepDefinitions\ProgramsSD.class
+utils\ExcelReader.class
 testRunner\TestRunner.class
 stepDefinitions\BatchSD.class
